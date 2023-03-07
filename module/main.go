@@ -21,7 +21,7 @@ func registryPath(path string) string {
 	if path == "/" {
 		return ""
 	}
-	return strings.Replace(path, "/libs", "/go-libs", 1)
+	return strings.Replace(path, "/libs/", "/go-lib-", 1)
 }
 
 func html(domainPath string, registryPath string) string {
